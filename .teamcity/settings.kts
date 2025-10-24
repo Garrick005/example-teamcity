@@ -52,6 +52,7 @@ object Build : BuildType({
         }
         maven {
             id = "Maven2_1"
+            executionMode = BuildStep.ExecutionMode.RUN_ON_FAILURE
 
             conditions {
                 doesNotContain("teamcity.build.branch", "master")
