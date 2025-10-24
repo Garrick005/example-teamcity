@@ -59,6 +59,10 @@ object Build : BuildType({
             }
             goals = "clean test"
         }
+        maven {
+            id = "Maven2_2"
+            goals = "clean package"
+        }
     }
 
     triggers {
