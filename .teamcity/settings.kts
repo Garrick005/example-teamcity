@@ -56,7 +56,7 @@ object Build : BuildType({
             conditions {
                 doesNotContain("teamcity.build.branch", "master")
             }
-            goals = "mvn clean test"
+            goals = "clean test"
         }
     }
 
